@@ -3,7 +3,7 @@ TOP = $(patsubst %/, %, $(dir $(lastword $(MAKEFILE_LIST))))
 
 PYTHON_FILES = $(shell find . -name '*.py' -not -path  './.direnv/*' -not -path './microdot/*' -not -path './utemplate/*' -not -path '*/templates/*')
 
-MICRODOT_REPO = $(HOME)/software/microdot/microdot
+MICRODOT_REPO = $(TOP)/submodules/microdot
 MICRODOT_SRC = $(MICRODOT_REPO)/src/microdot
 UTEMPLATE_SRC = $(MICRODOT_REPO)/libs/common/utemplate
 

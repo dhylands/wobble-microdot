@@ -3,3 +3,4 @@ __pycache__/
 microdot/
 utemplate/
 *_html.py
+!submodules/microdot/
