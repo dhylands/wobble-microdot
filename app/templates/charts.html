@@ -33,8 +33,7 @@
         },
         options: {
             interpolateNulls: true,
-            responsive: false,
-            maintainAspectRatio: false,
+            responsive: true,
             title: {
                 display: true,
                 text: 'Random Data'
@@ -71,13 +70,13 @@
     };
 
     const chart = document.getElementById('chart');
-    chart.style.height = "100%";
+    // chart.style.height = "100%";
 
     const canvas = document.getElementById('canvas');
     const context = canvas.getContext('2d');
 
-    canvas.style.width = "100%";
-    canvas.style.height = "100%";
+    // canvas.style.width = "100%";
+    // canvas.style.height = "100%";
 
     const lineChart = new Chart(context, config);
     socket = null;

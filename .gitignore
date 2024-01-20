@@ -1,6 +1,9 @@
 .direnv/
+upy/
 __pycache__/
 microdot/
 utemplate/
 *_html.py
+*.mpy
 !submodules/microdot/
+wifi_config.py
